@@ -6,8 +6,8 @@
 <meta name="theme-color" content="#101215">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Forge">
-<title>Forge</title>
+<meta name="apple-mobile-web-app-title" content="ForgePF">
+<title>ForgePF</title>
 <style>
   :root{
     --ink:#101215; --steel:#1b1f24; --steel2:#22272e; --line:#2c333b;
@@ -158,7 +158,7 @@
 <body>
 <header>
   <div class="brand">
-    <h1>FOR<span>GE</span></h1>
+    <h1>FORGE<span>PF</span></h1>
     <div class="cyc num" id="cycLabel">Cycle 1</div>
   </div>
   <div class="wave" id="waveBar"></div>
@@ -239,29 +239,29 @@ function mainFor(key, wk){
 /* ---------- program content ---------- */
 var PROGRAM=[
   {id:"D1", label:"D1", cn:"Lower", focus:"Lower · Squat", main:"squat", drop:false,
-   acc:[["Romanian Deadlift","3 × 8–10"],["Bulgarian Split Squat / Leg Press","3 × 10–12"],
-        ["Ring / Slider Leg Curl","3 × 10–15"],["Standing Calf Raise","4 × 10–15"]],
-   fin:"Rower 5×250m / 90s  ·  or sandbag zercher carries"},
+   acc:[["Romanian Deadlift","3 × 8–10"],["Leg Press","3 × 10–12"],
+        ["Seated Leg Curl","3 × 10–12"],["Leg Extension","2–3 × 12–15"],["Standing Calf Raise","4 × 10–15"]],
+   fin:"Incline treadmill 8–10 min brisk  ·  or rower 5×250m"},
   {id:"D2", label:"D2", cn:"Push", focus:"Push · Bench", main:"bench", drop:false,
-   acc:[["Overhead Press / Seated DB Press","3 × 6–8"],["Incline DB Press","3 × 8–12"],
-        ["Ring / Weighted Dip","3 × 8–12"],["Lateral Raise","3–4 × 12–20"],["Triceps (pushdown/OH)","3 × 10–15"]],
-   fin:"Ring push-up burnout  ·  or loaded carry"},
+   acc:[["Overhead Press / Landmine Press","3 × 6–8"],["Incline DB Press","3 × 8–12"],
+        ["Pec Deck / Cable Fly","3 × 12–15"],["Lateral Raise","3–4 × 12–20"],["Triceps Pushdown","3 × 10–15"]],
+   fin:"Cable press-around burnout  ·  or DB farmer carry"},
   {id:"D3", label:"D3", cn:"Pull", focus:"Pull", main:"pullup", drop:false,
-   acc:[["Barbell Row","3 × 6–8"],["Chest-Supported / Cable Row","3 × 10–12"],
-        ["Ring Row / Lat Pulldown","3 × 10–12"],["Face Pull","3 × 15–20"],
-        ["EZ / BB Curl","3 × 8–12"],["Incline DB Curl","2 × 12–15"]],
-   fin:"Rower intervals  ·  or ruck loaded carry"},
+   acc:[["Barbell / Landmine Row","3 × 6–8"],["Chest-Supported Row","3 × 10–12"],
+        ["Lat Pulldown","3 × 10–12"],["Face Pull","3 × 15–20"],
+        ["Cable / EZ Curl","3 × 8–12"],["Incline DB Curl","2 × 12–15"]],
+   fin:"Rower intervals  ·  or incline treadmill"},
   {id:"D4", label:"D4", cn:"Lower", focus:"Lower · Deadlift", main:"deadlift", drop:false,
-   acc:[["Front Squat / Hack / Leg Press","3 × 8–10"],["Barbell Hip Thrust","3 × 8–12"],
-        ["Nordic Curl (or ring leg curl)","3 × 6–10"],["Walking Lunge","2–3 × 20 steps"],
+   acc:[["Hack Squat / Front Squat","3 × 8–10"],["Hip Thrust (bar / machine)","3 × 8–12"],
+        ["Seated Leg Curl","3 × 10–12"],["Walking Lunge (DB)","2–3 × 20 steps"],
         ["Seated Calf Raise","4 × 12–15"]],
-   fin:"Sandbag shouldering / ruck step-ups  ·  or rower Z2"},
+   fin:"Sled push/drag  ·  or stair climber  ·  or farmer carry"},
   {id:"D5", label:"D5", cn:"Pump", focus:"Arms · Delts · droppable", main:null, drop:true,
-   acc:[["Incline DB Press + Pull-up (SS)","3 × 10–12 / 8–10"],["Lateral Raise","4 × 15–20"],
-        ["EZ Curl + Rope Pushdown (SS)","3 × 10–12 / 12–15"],["Rear Delt / Face Pull","3 × 20"],
-        ["Hammer Curl + OH Triceps (SS)","3 × 12 / 12"],["Ab Roller","3 × 8–12"],
-        ["Ab Sling Leg Raise","3 × 12–15"]],
-   fin:"Rower 10-min steady  ·  or ring/core circuit"}
+   acc:[["Incline DB Press + Lat Pulldown (SS)","3 × 10–12 / 10–12"],["Cable Lateral Raise","4 × 15–20"],
+        ["Cable Curl + Rope Pushdown (SS)","3 × 10–12 / 12–15"],["Reverse Pec Deck","3 × 20"],
+        ["Hammer Curl + OH Cable Triceps (SS)","3 × 12 / 12"],["Cable Crunch / Ab Machine","3 × 12–15"],
+        ["Hanging Leg Raise","3 × 12–15"]],
+   fin:"Rower 10-min steady  ·  or cable core circuit"}
 ];
 
 /* ---------- helpers ---------- */
